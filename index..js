@@ -11,5 +11,6 @@ export function defineComponent(name, propDefs, factory){
         factory = propDefs
         propDefs = []
     }
-
-    
+customElementts.define(
+    name,
+)
