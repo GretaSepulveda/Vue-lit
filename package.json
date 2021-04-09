@@ -4,3 +4,4 @@
     "description": "proof of concept custom elements framework powered by @vue/reactivity + lit-html",
     "main": "index.js",
     "author": "Greta Sepulveda",
+"licence": "MIT"
