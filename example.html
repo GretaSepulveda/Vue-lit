@@ -20,3 +20,8 @@
       const onInput = e => {
       state.text = e.target.value
     }
+    return () => html`
+      <button @click=${toggle}>toggle child</button>
+      <p>
+      ${state.text} <input value=${state.text} @input=${onInput}>
+      </p>
