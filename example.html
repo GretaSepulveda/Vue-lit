@@ -42,3 +42,7 @@
     onUnmounted(() => {
       console.log('child unmounted')
     })
+    return () => html`
+      <p>${props.msg}</p>
+      <p>${state.count}</p>
+      <button @click=${increase}>increase</button>
