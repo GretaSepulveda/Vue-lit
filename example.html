@@ -10,11 +10,11 @@
     } from './index.js'
 
     defineComponent('my-component'() =>{
-        const state= reactive({
+        const state = reactive({
         text: 'hello',
         show: true
       })
       const toggle = () => {
-          
+      state.show = !state.show
       }
     
