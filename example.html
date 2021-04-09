@@ -25,3 +25,6 @@
       <p>
       ${state.text} <input value=${state.text} @input=${onInput}>
       </p>
+      ${state.show ? html`<my-child msg=${state.text}></my-child>` : ``}
+    `
+  })
