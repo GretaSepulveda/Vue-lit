@@ -28,3 +28,8 @@
       ${state.show ? html`<my-child msg=${state.text}></my-child>` : ``}
     `
   })
+  defineComponent('my-child', ['msg'], (props) => {
+    const state = reactive({ count: 0 })
+    const increase = () => {
+      state.count++
+    }
