@@ -37,4 +37,13 @@ customElementts.define(
                     isMounted = true
                   }
                 })
-        
+            }
+            connectedCallback() {
+              this._m && this._m.forEach((cb) => cb())
+            }
+            disconnectedCallback() {
+              this._um && this._um.forEach((cb) => cb())
+            }
+            attributeChangedCallback(name, oldValue, newValue) {
+              this._props[name] = newValue
+            }
