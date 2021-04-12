@@ -17,4 +17,7 @@ customElementts.define(
         static get observedAttributes() {
             return propDefs   
         }
-    
+        constructor() {
+            super()
+            const props = (this._props = shallowReactive({}))
+            currentInstance = this 
