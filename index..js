@@ -58,3 +58,8 @@ customElementts.define(
           }
         }
       }
+      export const onBeforeMount = createLifecycleMethod('_bm')
+      export const onMounted = createLifecycleMethod('_m')
+      export const onBeforeUpdate = createLifecycleMethod('_bu')
+      export const onUpdated = createLifecycleMethod('_u')
+      export const onUnmounted = createLifecycleMethod('_um')
