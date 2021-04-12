@@ -63,3 +63,5 @@ customElementts.define(
       export const onBeforeUpdate = createLifecycleMethod('_bu')
       export const onUpdated = createLifecycleMethod('_u')
       export const onUnmounted = createLifecycleMethod('_um')
+      export * from 'https://unpkg.com/lit-html?module'
+export * from 'https://unpkg.com/@vue/reactivity/dist/reactivity.esm-browser.js'
