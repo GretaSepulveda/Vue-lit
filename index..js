@@ -47,3 +47,14 @@ customElementts.define(
             attributeChangedCallback(name, oldValue, newValue) {
               this._props[name] = newValue
             }
+        }
+        )
+      }
+      
+      function createLifecycleMethod(name) {
+        return (cb) => {
+          if (currentInstance) {
+            ;(currentInstance[name] || (currentInstance[name] = [])).push(cb)
+          }
+        }
+      }
