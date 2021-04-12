@@ -27,3 +27,14 @@ customElementts.define(
             const root = this.attachShadow({ mode: 'closed' })
             let isMounted = false
             effect(() => {
+                if (isMounted) {
+                    this._bu && this._bu.forEach((cb) => cb())
+                  }
+                  render(template(), root)
+                  if (isMounted) {
+                    this._u && this._u.forEach((cb) => cb())
+                  } else {
+                    isMounted = true
+                  }
+                })
+        
