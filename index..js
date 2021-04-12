@@ -15,7 +15,6 @@ customElementts.define(
     name,
     class extends HTMLElement {
         static get observedAttributes() {
-            
+            return propDefs   
         }
-    }
-)
+    
