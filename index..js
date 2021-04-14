@@ -39,7 +39,7 @@ customElementts.define(
                 })
             }
             connectedCallback() {
-              this._m && this._m.forEach((cb) => cb())
+              this._m && this._m.forEach((cb) => ())
             }
             disconnectedCallback() {
               this._um && this._um.forEach((cb) => cb())
