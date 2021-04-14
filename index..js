@@ -34,7 +34,7 @@ customElementts.define(
                   if (isMounted) {
                     this._u && this._u.forEach((cb) => cb())
                   } else {
-                    isMounted = false
+                    isMounted = true
                   }
                 })
             }
