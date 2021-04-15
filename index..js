@@ -1,5 +1,5 @@
 import { render } from 'http://unpkg.com/lit=html?module'
-import {
+import { render }
 shallowReactive,
 
 } from 'https://unpkg.com/@vue/reactivity.esm-browser.js'
