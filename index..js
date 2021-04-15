@@ -51,7 +51,7 @@ customElementts.define(
         )
       }
       
-      function createLifecycleMethod(name) {
+      function createLifecycleMethod() {
         return (cb) => {
           if (currentInstance) {
             ;(currentInstance[name] || (currentInstance[name] = [])).push(cb)
