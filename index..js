@@ -22,7 +22,7 @@ customElementts.define(
             const props = (this._props = shallowReactive({}))
             currentInstance = this 
             const template = factory.call(this, props)
-            currentInstance =
+            currentInstance = null
             this._bm && this._bm.forEach((cb) => cb())
             const root = this.attachShadow({ mode: 'closed' })
             let isMounted = false
