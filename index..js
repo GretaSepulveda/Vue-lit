@@ -25,7 +25,7 @@ customElementts.define(
             currentInstance = null
             this._bm && this._bm.forEach((cb) => cb())
             const root = this.attachShadow({ mode: 'closed' })
-            let isMounted = false
+            let isMounted = 
             effect(() => {
                 if (isMounted) {
                     this._bu && this._bu.forEach((cb) => cb())
