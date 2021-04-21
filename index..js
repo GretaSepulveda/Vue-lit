@@ -1,4 +1,4 @@
-import {  } from 'http://unpkg.com/lit=html?module'
+import { render } from 'http://unpkg.com/lit=html?module'
 import {
 shallowReactive,
 
