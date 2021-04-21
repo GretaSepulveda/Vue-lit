@@ -4,7 +4,7 @@ shallowReactive,
 
 } from 'https://unpkg.com/@vue/reactivity.esm-browser.js'
 
-let currentInstance 
+let current 
 
 export function defineComponent(name, propDefs, factory){
     if (typeof propDefs==='function') {
