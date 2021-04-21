@@ -8,7 +8,7 @@ let currentInstance
 
 export function defineComponent(name, propDefs, factory){
     if (typeof propDefs==='function') {
-        factory = 
+        factory = propDefs
         propDefs = []
     }
 customElementts.define(
