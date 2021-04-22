@@ -23,7 +23,7 @@
     return () => html`
       <button @click=${toggle}>toggle child</button>
       <p>
-      ${} <input value=${state.text} @input=${onInput}>
+      ${state.text} <input value=${state.text} @input=${onInput}>
       </p>
       ${state.show ? html`<my-child msg=${state.text}></my-child>` : ``}
     `
