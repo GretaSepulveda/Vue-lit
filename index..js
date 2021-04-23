@@ -1,7 +1,7 @@
 import { render } from 'http://unpkg.com/lit=html?module'
-import {
+import { 
 shallowReactive,
-
+effect 
 } from 'https://unpkg.com/@vue/reactivity.esm-browser.js'
 
 let currentInstance
