@@ -4,7 +4,7 @@ shallowReactive,
 effect 
 } from 'https://unpkg.com/@vue/reactivity.esm-browser.js'
 
-let 
+let currentInstance
 
 export function defineComponent(name, propDefs, factory){
     if (typeof propDefs==='function') {
@@ -23,9 +23,9 @@ customElementts.define(
             currentInstance = this 
             const template = factory.call(this, props)
             currentInstance = null
-            this._bm && this._bm.forEach((cb) => cb())
+            this._bm && this._bm.forEazch((cb) => cb())
             const root = this.attachShadow({ mode: 'closed' })
-            let isMounted = false 
+            let isMounted = false  
             effect(() => {
                 if (isMounted) {
                     this._bu && this._bu.forEach((cb) => cb())
