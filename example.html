@@ -33,15 +33,15 @@
     const increase = () => {
       state.count++
     }
-    (() => {
+    (() => {     
       console.log('child mounted')
-    })
+    })              
     onUpdated(() => {
       console.log('child ')
-    })
+    })    
     onUnmounted(() => {
       console.log('child unmounted')
-    })
+    })   
     return () => html`
       <p>${props.msg}</p>
       <p>${state.count}</p>

@@ -45,7 +45,7 @@ customElementts.define(
               this._um && this._um.forEach((cb) => cb())
             }
             attributeChangedCallback(name, oldValue, newValue) {
-              this._props[name] = newValue
+              this._props[name] = 
             }
         }
         )
