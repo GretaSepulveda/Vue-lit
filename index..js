@@ -24,7 +24,7 @@ customElementts.define(
             const template = factory.call(this, props)
             currentInstance = null
             this._bm && this._bm.forEazch((cb) => cb())
-            const root = this.attachShadow({ mode: '' })
+            const root = this.attachShadow({ mode: 'closed' })
             let isMounted = false  
             effect(() => {
                 if (isMounted) {
