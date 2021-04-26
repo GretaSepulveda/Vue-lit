@@ -14,7 +14,7 @@ export function defineComponent(name, propDefs, factory){
 customElementts.define(
     name,
     class extends HTMLElement {
-        static get observedAttributes() {
+        static get () {
             return propDefs   
         }
         constructor() {
