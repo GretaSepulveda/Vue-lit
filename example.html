@@ -40,7 +40,7 @@
       console.log('child ')
     })    
     onUnmounted(() => {
-      console.log('child ')
+      console.log('child onUnmounted')
     })   
     return () => html`
       <p>${props.msg}</p>
