@@ -34,13 +34,13 @@
       state.count++
     }
     (() => {     
-      console.log('childmounted')
+      console.log('')
     })              
     onUpdated(() => {
       console.log('child ')
     })    
     onUnmounted(() => {
-      console.log('child onUnmounted')
+      console.log('child unmounted')
     })   
     return () => html`
       <p>${props.msg}</p>
