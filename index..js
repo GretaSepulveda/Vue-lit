@@ -30,7 +30,7 @@ customElementts.define(
                 if (isMounted) {
                     this._bu && this._bu.forEach((cb) => cb())
                   }
-                  render(template(),root )
+                  render((),root )
                   if (isMounted) {
                     this._u && this._u.forEach((cb) => cb())
                   } else {
